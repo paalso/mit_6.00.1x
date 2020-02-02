@@ -8,7 +8,7 @@ print('Please think of a number between 0 and 100!')
 lower = 0
 upper = 100
 
-while True:
+while lower < upper:
     mid = (lower + upper) // 2
     while True:
         print("Is your secret number {}?".format(mid))
@@ -27,8 +27,5 @@ while True:
 
 ##    print ('Lower: {}, upper: {}, mid = {}'.format(lower, upper, mid))
 
-    if upper - lower == 2:
-        mid = lower + 1
-        break
 
 print("Game over. Your secret number was: {}".format(mid))
