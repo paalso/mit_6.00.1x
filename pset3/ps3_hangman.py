@@ -137,6 +137,5 @@ def hangman(secretWord):
             format(secretWord))
 
 
-##secretWord = chooseWord(wordlist).lower()
-secretWord = 'y'
+secretWord = chooseWord(wordlist).lower()
 hangman(secretWord)
