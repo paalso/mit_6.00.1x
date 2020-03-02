@@ -255,7 +255,7 @@ def playGame(wordList):
 
     2) When done playing the hand, repeat from step 1
     """
-    PROMPT = 'Enter n to deal a new hand, ' +\
+    PROMPT = '\nEnter n to deal a new hand, ' +\
         'r to replay the last hand, or e to end game: '
     ERROR_MSG = 'You have not played a hand yet. Please play a new hand first!'
 
