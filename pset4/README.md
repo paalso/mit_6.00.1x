@@ -1,0 +1,1 @@
+[Task info](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2020/courseware/f0a19f0a8c2d49f3aa78ef3823845271/64f4d344ecdc48d2bef514882e6236ab/)
