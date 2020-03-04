@@ -124,10 +124,7 @@ class Message(object):
              down the alphabet by the input shift
         '''
         shift_dict = self.build_shift_dict(shift)
-        shifted_text = []
-        for c in self.message_text:
-            shifted_text.append(shift_dict.get(c, c))
-
+        return ''.join([shift_dict.get(c, c) for c in self.message_text])
 
 
 class PlaintextMessage(Message):
