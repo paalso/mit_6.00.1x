@@ -124,49 +124,7 @@ def playGame(wordList):
 
     wordList: list (string)
     """
-    PROMPT1 = '\nEnter n to deal a new hand, ' +\
-        'r to replay the last hand, or e to end game: '
-    PROMPT2 = '\nEnter u to have yourself play, c to have the computer play: '
-    ERROR_MSG = 'You have not played a hand yet. Please play a new hand first!'
 
-    hand = None
-
-    while True:
-        option = input(PROMPT1)
-
-        if option == 'e':
-            return
-
-        if option not in ('n', 'r'):
-            print('Invalid command.')
-            continue
-
-        if option == 'r' and not hand:
-            print(ERROR_MSG)
-            continue
-
-        while True:
-            playerOption = input(PROMPT2)
-
-            if playerOption not in ('u', 'c'):
-                print('Invalid command.')
-                continue
-
-            if playerOption == 'u':
-                humanPlayer = True
-            else:
-                humanPlayer = False
-
-            print()
-            break
-
-        if option == 'n':
-            hand = dealHand(HAND_SIZE)
-
-        if humanPlayer:
-            playHand(hand, wordList, HAND_SIZE)
-        else:
-            compPlayHand(hand, wordList, HAND_SIZE)
 
 #
 # Build data structures used for entire session and play game
